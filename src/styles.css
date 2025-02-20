@@ -68,3 +68,19 @@
     --color-success-900: #094b33;
     --color-success-950: #042a1d;
 }
+
+* {
+    font-family: 'Albert Sans', serif;
+}
+
+body {
+    @apply bg-main-50;
+}
+
+.btn-primary {
+    @apply bg-main text-white rounded-2xl h-12 text-lg font-semibold;
+}
+
+.btn-secondary {
+    @apply bg-white text-[#0E0E0E] rounded-2xl h-12 text-lg font-semibold border border-main flex items-center justify-center gap-2;
+}
