@@ -1,6 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'tailwindcss';
 
+/* Set the base font size to 10px (1rem = 10px) */
+/* html {
+    font-size: 62.5%;
+} */
+
 @theme {
     /* Main Colors */
     --color-main: #8e4026;
@@ -83,5 +88,12 @@ body {
 }
 
 .btn-secondary {
-    @apply bg-white text-[#0E0E0E] rounded-2xl h-12 text-lg font-semibold border border-main flex items-center justify-center gap-2;
+    @apply bg-main-50 text-[#0E0E0E] rounded-2xl h-12 text-lg font-semibold border border-main flex items-center justify-center gap-2;
+}
+.btn-label {
+    @apply absolute font-semibold text-lg left-1 top-1/2 -translate-y-1/2 text-gray-500 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-placeholder-shown:-translate-y-1/2 peer-focus:top-0 peer-focus:text-sm peer-focus:text-main bg-main-50 px-1;
+}
+
+input:not(:placeholder-shown) ~ .btn-label {
+    @apply top-0 text-sm text-main;
 }
