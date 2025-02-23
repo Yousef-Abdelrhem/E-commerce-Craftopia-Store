@@ -4,7 +4,8 @@ import { CategoryCardComponent } from '../category-card/category-card.component'
 
 @Component({
   selector: 'app-top-categories',
-  imports:[CommonModule, CategoryCardComponent],
+  imports:[CommonModule, CategoryCardComponent
+  ],
   templateUrl: './top-categories.component.html',
   styleUrls: ['./top-categories.component.css']
 })
