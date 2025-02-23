@@ -6,6 +6,7 @@ import { OurReviewsComponent } from '../../Components/our-reviews/our-reviews.co
 @Component({
     selector: 'app-home',
     imports: [FirstSectionComponent,SecondSectionComponent,OurReviewsComponent],
+
     templateUrl: './home.component.html',
     styles: ``,
 })
