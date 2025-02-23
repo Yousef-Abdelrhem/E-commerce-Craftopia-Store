@@ -96,4 +96,10 @@ body {
 
 input:not(:placeholder-shown) ~ .btn-label {
     @apply top-0 text-sm text-main;
+} 
+
+/* Trending Cards */
+
+.trending-card-text{
+    @apply text-gray-100 text-[1.1rem] font-light;
 }
