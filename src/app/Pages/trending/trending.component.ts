@@ -50,7 +50,7 @@ cards = [
   {
     title: 'Vintage Purse',
     price: '$320',
-    description: 'Vintage Style Purse Bag, Straw Knit, Holiday Bag with a timeless design. Inspired by classic styles with modern functionality. Spacious compartments for organized storage. Perfect for casual outings and vacation trips.',
+    description: 'Vintage Stye Purse Bag, Straw Knit, Holiday Bag with a timeless design. Inspired by classic styles with modern functionality. Spacious compartments for organized storage. Perfect for casual outings and vacation trips.',
     image: 'images/trending/6.svg',
     loved: false
   }
