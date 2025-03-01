@@ -9,8 +9,7 @@ import { Component } from '@angular/core';
 })
 export class TrendingComponent {
   heart = 'images/trending/heart.svg';
-  // In your component.ts file
-// In your component.ts file
+  
 cards = [
   {
     title: 'Generic',
