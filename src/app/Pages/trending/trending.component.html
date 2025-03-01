@@ -10,12 +10,17 @@
                 <div class="flex flex-col gap-2">
                     <div class="flex justify-between ">
                         <div class="text-bold text-white text-[1.2rem]">{{card.title}}</div>
-                        <div><img src="images/trending/4stars.svg"/></div>
+                        <div class="flex ">
+                            <span *ngFor="let item of [1,2,3,4,5]; index as i">
+                                <svg class="text-yellow-400 w- h-6" [ngClass]="{'text-yellow-400': card.rating > i , 'text-gray-400': card.rating <= i }" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M8.5 0.5L10.2961 6.71885H16.1085L11.4062 10.5623L13.2023 16.7812L8.5 12.9377L3.79772 16.7812L5.59383 10.5623L0.891548 6.71885H6.70389L8.5 0.5Z"/>
+                                </svg>
+                            </span>
+                        </div>
                     </div>
                     <div class="trending-card-text" >{{card.price}}</div>
                     <div class="trending-card-text max-h-[5rem] overflow-hidden text-ellipsis">{{card.description}}</div>
                 </div>
-        
                 <button class="bg-main-50 p-2 mt-4 rounded-[1rem] w-full">
                     <div class="flex justify-center gap-2">
                         <img  src="images/trending/basket.svg"/>
