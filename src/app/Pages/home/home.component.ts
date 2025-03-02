@@ -5,10 +5,11 @@ import { OurReviewsComponent } from '../../Components/our-reviews/our-reviews.co
 import { AboutUsComponent } from '../../Components/about-us/about-us.component';
 import { TopCategoriesComponent } from '../../Components/top-categories/top-categories.component';
 import { TrendingComponent } from '../trending/trending.component';
+import { FooterComponent } from '../../Components/footer/footer.component';
 
 @Component({
     selector: 'app-home',
-    imports: [FirstSectionComponent,SecondSectionComponent, AboutUsComponent, TopCategoriesComponent,TrendingComponent, OurReviewsComponent],
+    imports: [FirstSectionComponent,SecondSectionComponent, AboutUsComponent, TopCategoriesComponent,TrendingComponent, OurReviewsComponent,FooterComponent],
 
     templateUrl: './home.component.html',
     styles: ``,
