@@ -1,6 +1,6 @@
 <section class="bg-main rounded-t-[64px] mt-8 flex items-center justify-center p-10 gap-6">
-    <div class="w-full max-w-2xl p-4 mx-auto bg-main">
-        <h2 class="text-3xl font-bold text-main-50 mb-6 text-left mb-[90px]">Our Reviews</h2>
+    <div class="max-w-2xl p-4 mx-auto bg-main">
+        <h2 class="text-3xl font-bold text-main-50 text-left mb-[90px]">Our Reviews</h2>
     
         <div *ngIf="reviews.length > 0">
             <div class="flex items-center gap-4 mb-4">
@@ -33,8 +33,8 @@
                   [ngClass]="{'bg-main-50': i === currentIndex, 'bg-gray-400': i !== currentIndex}"></span>
         </div>
     </div>
-    <div class="flex-2 flex justify-center items-center mr-[-250px] ">
-        <img src="Reviews.png" alt="Description" class="hidden sm:block w-[25%] sm:w-[40%] md:w-[50%] md:h-[20%] object-cover rounded-lg">
+    <div class="flex justify-center items-center  ">
+        <img src="Reviews.png" alt="Description" class="hidden lg:ml-75 sm:block w-[25%] sm:w-[40%] md:w-[60%] md:h-[20%] object-cover rounded-lg">
     </div>
     
     </section>
