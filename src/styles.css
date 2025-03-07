@@ -82,16 +82,26 @@
 body,html {
     @apply bg-main-50;
     width: 100%;
-
 }
 
 .btn-primary {
     @apply bg-main text-white rounded-2xl h-12 text-lg font-semibold;
 }
+.btn-primary-small{
+    @apply bg-main text-white rounded-[6px] font-semibold border border-main 
+    h-8 w-full text-sm px-4;      
+}
 
 .btn-secondary {
     @apply bg-main-50 text-[#0E0E0E] rounded-2xl h-12 text-lg font-semibold border border-main flex items-center justify-center gap-2;
 }
+
+.btn-outline {
+    @apply bg-main-50 text-main rounded-[6px] font-semibold border border-main 
+        h-8 w-full text-sm px-4;      
+}
+
+.bt
 .btn-label {
     @apply absolute font-semibold text-lg left-1 top-1/2 -translate-y-1/2 text-gray-500 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-placeholder-shown:-translate-y-1/2 peer-focus:top-0 peer-focus:text-sm peer-focus:text-main bg-main-50 px-1;
 }
