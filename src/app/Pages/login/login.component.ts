@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { ButtonComponent } from '../../Components/button/button.component';
 import { RouterLink } from '@angular/router';
 import { FormGroup, FormControl, ReactiveFormsModule, Validators } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
 @Component({
     selector: 'app-login',
-    imports: [ButtonComponent, RouterLink, ReactiveFormsModule, CommonModule],
+    imports: [RouterLink, ReactiveFormsModule, CommonModule],
     templateUrl: './login.component.html',
 })
 export class LoginComponent {
