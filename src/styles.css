@@ -1,11 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'tailwindcss';
 
-/* Set the base font size to 10px (1rem = 10px) */
-/* html {
-    font-size: 62.5%;
-} */
-
 @theme {
     /* Main Colors */
     --color-main: #8e4026;
@@ -79,7 +74,8 @@
     box-sizing: border-box;
 }
 
-body,html {
+body,
+html {
     @apply bg-main-50;
     width: 100%;
 }
@@ -87,9 +83,9 @@ body,html {
 .btn-primary {
     @apply bg-main text-white rounded-2xl h-12 text-lg font-semibold;
 }
-.btn-primary-small{
+.btn-primary-small {
     @apply bg-main text-white rounded-[6px] font-semibold border border-main 
-    h-8 w-full text-sm px-4;      
+    h-8 w-full text-sm px-4;
 }
 
 .btn-secondary {
@@ -98,20 +94,19 @@ body,html {
 
 .btn-outline {
     @apply bg-main-50 text-main rounded-[6px] font-semibold border border-main 
-        h-8 w-full text-sm px-4;      
+        h-8 w-full text-sm px-4;
 }
 
-.bt
-.btn-label {
+.bt .btn-label {
     @apply absolute font-semibold text-lg left-1 top-1/2 -translate-y-1/2 text-gray-500 transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm peer-placeholder-shown:-translate-y-1/2 peer-focus:top-0 peer-focus:text-sm peer-focus:text-main bg-main-50 px-1;
 }
 
 input:not(:placeholder-shown) ~ .btn-label {
     @apply top-0 text-sm text-main;
-} 
+}
 
 /* Trending Cards */
 
-.trending-card-text{
+.trending-card-text {
     @apply text-gray-100 text-[1.1rem] font-light;
 }
