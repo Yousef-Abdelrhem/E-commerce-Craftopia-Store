@@ -82,8 +82,6 @@
 body,html {
     @apply bg-main-50;
     width: 100%;
-    
-
 }
 
 .btn-primary {
