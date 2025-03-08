@@ -1,0 +1,436 @@
+<div
+    *ngIf="isCartVisible"
+    class="fixed top-0 right-0 h-full w-100 bg-main-50 shadow-lg transition-transform duration-300 ease-in-out transform translate-x-0 flex flex-col"
+>
+    <div class="flex justify-between p-2 shadow-lg">
+        <h2 class="font-bold text-main text-[2rem]">Your Cart</h2>
+        <button (click)="closeCart()" class="hover:cursor-pointer">
+            <img class="w-8 h-8" src="icons/exit.svg" alt="Close" />
+        </button>
+    </div>
+    <div class="h-130 overflow-y-auto flex flex-col p-2 gap-2">
+        <div class="flex gap-2">
+            <img class="rounded-[10px]" src="Bag.png" alt="" />
+            <div class="bg-main rounded-[10px] w-full flex-col gap-1">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold text-white">Pure Chakra</p>
+                    <img src="icons/delete-item.svg" alt="" />
+                </div>
+                <div class="flex gap-2 p-2 mt-[-11px]">
+                    <span class="text-white">$350.00</span>
+                    <span class="text-[#A8A8A8] line-through">$400.00</span>
+                </div>
+
+                <div class="flex items-center justify-center p-2 mb-1">
+                    <div class="flex bg-main-50">
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        <span
+                            class="flex flex items-center justify-center bg-main h-[30px] w-[30px] border-t-3 border-main-50 text-main-50"
+                            >11</span
+                        >
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <img class="rounded-[10px]" src="Bag.png" alt="" />
+            <div class="bg-main rounded-[10px] w-full flex-col gap-1">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold text-white">Pure Chakra</p>
+                    <img src="icons/delete-item.svg" alt="" />
+                </div>
+                <div class="flex gap-2 p-2 mt-[-11px]">
+                    <span class="text-white">$350.00</span>
+                    <span class="text-[#A8A8A8] line-through">$400.00</span>
+                </div>
+
+                <div class="flex items-center justify-center p-2 mb-1">
+                    <div class="flex bg-main-50">
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        <span
+                            class="flex flex items-center justify-center bg-main h-[30px] w-[30px] border-t-3 border-main-50 text-main-50"
+                            >11</span
+                        >
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <img class="rounded-[10px]" src="Bag.png" alt="" />
+            <div class="bg-main rounded-[10px] w-full flex-col gap-1">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold text-white">Pure Chakra</p>
+                    <img src="icons/delete-item.svg" alt="" />
+                </div>
+                <div class="flex gap-2 p-2 mt-[-11px]">
+                    <span class="text-white">$350.00</span>
+                    <span class="text-[#A8A8A8] line-through">$400.00</span>
+                </div>
+
+                <div class="flex items-center justify-center p-2 mb-1">
+                    <div class="flex bg-main-50">
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        <span
+                            class="flex flex items-center justify-center bg-main h-[30px] w-[30px] border-t-3 border-main-50 text-main-50"
+                            >11</span
+                        >
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <img class="rounded-[10px]" src="Bag.png" alt="" />
+            <div class="bg-main rounded-[10px] w-full flex-col gap-1">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold text-white">Pure Chakra</p>
+                    <img src="icons/delete-item.svg" alt="" />
+                </div>
+                <div class="flex gap-2 p-2 mt-[-11px]">
+                    <span class="text-white">$350.00</span>
+                    <span class="text-[#A8A8A8] line-through">$400.00</span>
+                </div>
+
+                <div class="flex items-center justify-center p-2 mb-1">
+                    <div class="flex bg-main-50">
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        <span
+                            class="flex flex items-center justify-center bg-main h-[30px] w-[30px] border-t-3 border-main-50 text-main-50"
+                            >11</span
+                        >
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <img class="rounded-[10px]" src="Bag.png" alt="" />
+            <div class="bg-main rounded-[10px] w-full flex-col gap-1">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold text-white">Pure Chakra</p>
+                    <img src="icons/delete-item.svg" alt="" />
+                </div>
+                <div class="flex gap-2 p-2 mt-[-11px]">
+                    <span class="text-white">$350.00</span>
+                    <span class="text-[#A8A8A8] line-through">$400.00</span>
+                </div>
+
+                <div class="flex items-center justify-center p-2 mb-1">
+                    <div class="flex bg-main-50">
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        <span
+                            class="flex flex items-center justify-center bg-main h-[30px] w-[30px] border-t-3 border-main-50 text-main-50"
+                            >11</span
+                        >
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <img class="rounded-[10px]" src="Bag.png" alt="" />
+            <div class="bg-main rounded-[10px] w-full flex-col gap-1">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold text-white">Pure Chakra</p>
+                    <img src="icons/delete-item.svg" alt="" />
+                </div>
+                <div class="flex gap-2 p-2 mt-[-11px]">
+                    <span class="text-white">$350.00</span>
+                    <span class="text-[#A8A8A8] line-through">$400.00</span>
+                </div>
+
+                <div class="flex items-center justify-center p-2 mb-1">
+                    <div class="flex bg-main-50">
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        <span
+                            class="flex flex items-center justify-center bg-main h-[30px] w-[30px] border-t-3 border-main-50 text-main-50"
+                            >11</span
+                        >
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <img class="rounded-[10px]" src="Bag.png" alt="" />
+            <div class="bg-main rounded-[10px] w-full flex-col gap-1">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold text-white">Pure Chakra</p>
+                    <img src="icons/delete-item.svg" alt="" />
+                </div>
+                <div class="flex gap-2 p-2 mt-[-11px]">
+                    <span class="text-white">$350.00</span>
+                    <span class="text-[#A8A8A8] line-through">$400.00</span>
+                </div>
+
+                <div class="flex items-center justify-center p-2 mb-1">
+                    <div class="flex bg-main-50">
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        <span
+                            class="flex flex items-center justify-center bg-main h-[30px] w-[30px] border-t-3 border-main-50 text-main-50"
+                            >11</span
+                        >
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex gap-2">
+            <img class="rounded-[10px]" src="Bag.png" alt="" />
+            <div class="bg-main rounded-[10px] w-full flex-col gap-1">
+                <div class="flex justify-between p-2">
+                    <p class="font-bold text-white">Pure Chakra</p>
+                    <img src="icons/delete-item.svg" alt="" />
+                </div>
+                <div class="flex gap-2 p-2 mt-[-11px]">
+                    <span class="text-white">$350.00</span>
+                    <span class="text-[#A8A8A8] line-through">$400.00</span>
+                </div>
+
+                <div class="flex items-center justify-center p-2 mb-1">
+                    <div class="flex bg-main-50">
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                        <span
+                            class="flex flex items-center justify-center bg-main h-[30px] w-[30px] border-t-3 border-main-50 text-main-50"
+                            >11</span
+                        >
+                        <button class="p-2 bg-main-50">
+                            <svg
+                                width="16"
+                                height="16"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="#6B3A27"
+                                stroke-width="3"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex flex-col mt-4 px-2">
+        <div class="flex justify-between">
+            <h2 class="text-main text-[24px] font-semibold">Total Price</h2>
+            <span class="text-[20px] text-[#7B7B7B] mt-2"> $3000.00</span>
+        </div>
+        <button class="w-full bg-main rounded-[8px] px-10 py-[8px] mt-2 text-white font-bold">
+            Checkout
+        </button>
+        <button
+            class="w-full rounded-[8px] px-10 py-[8px] mt-2 text-main font-bold border border-main"
+        >
+            Clear All
+        </button>
+    </div>
+</div>
