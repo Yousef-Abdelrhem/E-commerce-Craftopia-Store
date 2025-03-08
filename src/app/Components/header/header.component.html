@@ -24,8 +24,8 @@
                 <li><a href="">Products</a></li>
                 <li><a href="">Contact Us</a></li>
                 <li>
-                    <a href="/" class="hover:fill-red-500"
-                        ><svg
+                    <button (click)="toggleCart($event)" class="hover:fill-red-500 cursor-pointer">
+                        <svg
                             width="24"
                             height="25"
                             viewBox="0 0 24 25"
@@ -37,7 +37,7 @@
                                 fill="#FDF6F3"
                             />
                         </svg>
-                    </a>
+                    </button>
                 </li>
                 <li>
                     <a href="/"
