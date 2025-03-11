@@ -5,7 +5,6 @@ import { CartServiceService } from '../../Services/cart-service.service';
     selector: 'app-header',
     imports: [],
     templateUrl: './header.component.html',
-   
 })
 export class HeaderComponent {
     constructor(private cartService: CartServiceService) {}

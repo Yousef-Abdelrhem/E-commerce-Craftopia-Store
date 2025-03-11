@@ -1,16 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { HeaderComponent } from '../../Components/header/header.component';
 import { OurReviewsComponent } from '../../Components/our-reviews/our-reviews.component';
+import { HeaderComponent } from '../../Components/header/header.component';
 import { FooterComponent } from '../../Components/footer/footer.component';
 
 @Component({
-  selector: 'app-products',
-  imports: [CommonModule, HeaderComponent, OurReviewsComponent,FooterComponent],
-  templateUrl: './products.component.html',
+  selector: 'app-fav-product',
+  imports: [CommonModule,HeaderComponent, OurReviewsComponent,FooterComponent],
+  templateUrl: './fav-product.component.html',
   styles: ``
 })
-export class ProductsComponent {
+
+
+
+export class FavProductComponent {
+
   cardsNumber: number = 4;
   cardsOrder = 'Z-A';
   displayP='hidden'; 
@@ -32,7 +36,7 @@ export class ProductsComponent {
       price: '$250',
       description: 'Cotton Macrame Purse Bag, Hand-Woven Knitted Crossbody with intricate patterns. Soft and durable cotton fabric with a boho-chic vibe. Versatile for casual and festival wear. Comes with a secure zipper and adjustable strap for comfort.',
       image: 'images/trending/2.svg',
-      loved: false,
+      loved: true,
       rating: 3
     },
     {
@@ -48,7 +52,7 @@ export class ProductsComponent {
       price: '$300',
       description: 'Handmade Summer Tote Bag, Woven Straw with colorful patterns. Spacious and lightweight, perfect for beach vacations, picnics, and casual outings. Durable handles for easy carrying and secure closure to protect belongings.',
       image: 'images/trending/4.svg',
-      loved: false,
+      loved: true,
       rating: 4
     },
     {
@@ -64,7 +68,7 @@ export class ProductsComponent {
       price: '$320',
       description: 'Vintage Style Purse Bag, Straw Knit, Holiday Bag with a timeless design. Inspired by classic styles with modern functionality. Spacious compartments for organized storage. Perfect for casual outings and vacation trips.',
       image: 'images/trending/6.svg',
-      loved: false,
+      loved: true,
       rating: 3
     },
     {
@@ -80,7 +84,7 @@ export class ProductsComponent {
       price: '$310',
       description: 'Rustic Woven Handbag, beautifully crafted for everyday use. Combines durability with style, featuring a secure magnetic closure and reinforced handles. Ideal for both casual and semi-formal outings.',
       image: 'images/trending/2.svg',
-      loved: false,
+      loved: true,
       rating: 4
     }
 ];
@@ -101,4 +105,5 @@ export class ProductsComponent {
     this.displaySort = this.displaySort === 'hidden' ? 'block' : 'hidden';
     this.cardsOrder = order;
   }
+
 }
