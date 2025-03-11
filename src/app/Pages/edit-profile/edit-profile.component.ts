@@ -6,6 +6,5 @@ import { FooterComponent } from '../../Components/footer/footer.component';
     selector: 'app-edit-profile',
     imports: [HeaderComponent, FooterComponent],
     templateUrl: './edit-profile.component.html',
-    styleUrl: './edit-profile.component.css',
 })
 export class EditProfileComponent {}
