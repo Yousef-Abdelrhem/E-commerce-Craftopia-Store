@@ -1,12 +1,18 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { OurReviewsComponent } from '../../Components/our-reviews/our-reviews.component';
+import { HeaderComponent } from '../../Components/header/header.component';
+import { FooterComponent } from '../../Components/footer/footer.component';
 
 @Component({
   selector: 'app-fav-product',
-  imports: [CommonModule],
+  imports: [CommonModule,HeaderComponent, OurReviewsComponent,FooterComponent],
   templateUrl: './fav-product.component.html',
   styles: ``
 })
+
+
+
 export class FavProductComponent {
 
   cardsNumber: number = 4;
