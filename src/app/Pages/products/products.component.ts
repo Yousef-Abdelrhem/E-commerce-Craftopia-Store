@@ -1,9 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { HeaderComponent } from '../../Components/header/header.component';
+import { OurReviewsComponent } from '../../Components/our-reviews/our-reviews.component';
+import { FooterComponent } from '../../Components/footer/footer.component';
 
 @Component({
   selector: 'app-products',
-  imports: [CommonModule],
+  imports: [CommonModule, HeaderComponent, OurReviewsComponent,FooterComponent],
   templateUrl: './products.component.html',
   styles: ``
 })
