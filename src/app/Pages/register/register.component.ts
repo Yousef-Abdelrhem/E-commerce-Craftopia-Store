@@ -37,4 +37,5 @@ export class RegisterComponent {
         this.eye = this.eye == 'icons/eye.svg' ? 'icons/hideEye.svg' : 'icons/eye.svg';
         //    console.log(this.form.get('name'));
     }
+    
 }
