@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
 // import { TopCategoriesComponent } from '../../Components/top-categories/top-categories.component';
 // import { TrendingComponent } from '../trending/trending.component';
 import { FooterComponent } from '../../Components/footer/footer.component';
+import { CheckoutConfirmationComponent } from '../../Components/checkout-confirmation/checkout-confirmation.component';
 // import { CartComponent } from '../../Components/cart/cart.component';
-import { CheckoutComponent } from '../../Components/checkout/checkout.component';
+// import { CheckoutComponent } from '../../Components/checkout/checkout.component';
 
 @Component({
     selector: 'app-home',
@@ -20,7 +21,8 @@ import { CheckoutComponent } from '../../Components/checkout/checkout.component'
         // OurReviewsComponent,
         FooterComponent,
         // CartComponent,
-        CheckoutComponent
+        // CheckoutComponent
+        CheckoutConfirmationComponent
     ],
 
     templateUrl: './home.component.html',
