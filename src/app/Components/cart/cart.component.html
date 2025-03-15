@@ -1,6 +1,6 @@
 <div
     *ngIf="isCartVisible"
-    class="fixed top-0 right-0 h-full w-100 bg-main-50 shadow-lg transition-transform duration-300 ease-in-out transform translate-x-0 flex flex-col"
+    class="fixed top-0 right-0 h-full w-[400px] bg-main-50 shadow-lg transition-transform duration-300 ease-in-out transform translate-x-0 flex flex-col"
 >
     <div class="flex justify-between p-2 shadow-lg">
         <h2 class="font-bold text-main text-[2rem]">Your Cart</h2>
@@ -9,10 +9,20 @@
         </button>
     </div>
 
-    <div class="h-[700px] overflow-y-auto flex flex-col py-4 px-2 gap-6">
+    <div class="h-[520px] overflow-y-scroll flex flex-col py-5 px-2 gap-6">
+        <div
+            *ngIf="cartItems.length === 0"
+            class="flex flex-col items-center justify-center h-full"
+        >
+            <img src="trolley.svg" alt="Empty Cart" class="w-32 h-32 mb-4 mr-6" />
+            <p class="text-main text-lg font-semibold">Your cart is empty!</p>
+            <p class="text-gray-500 text-sm mb-4">Start shopping to fill it up.</p>
+            <button class="bg-main text-white px-4 py-2 rounded-lg">Shop Now</button>
+        </div>
+
         <div
             *ngFor="let item of cartItems; let i = index"
-            class="flex gap-2 items-center h-[100px]"
+            class="flex gap-2 items-center h-[100px] flex-grow-0"
         >
             <img
                 class="rounded-[10px] w-[111px] h-[114px]"
@@ -83,7 +93,7 @@
         </div>
         <button class="mt-2 bg-main text-white py-2 px-4 rounded-lg text-center">Checkout</button>
         <button
-            class="w-full rounded-[8px] px-10 py-[8px] mt-2 text-main font-bold border border-main mb-3"
+            class="w-full rounded-[8px] px-10 py-[8px] mt-2 text-main font-bold border border-main"
         >
             Clear All
         </button>
