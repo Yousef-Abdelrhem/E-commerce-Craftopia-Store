@@ -1,0 +1,113 @@
+<div
+    style="
+        background-image: url('/edit-profile-bg.svg');
+        background-size: cover;
+        background-position: top;
+    "
+    class="h-auto min-h-screen flex flex-col sm:flex-row p-10 sm:p-20 justify-center items-center gap-10 sm:gap-40"
+>
+    <div
+        class="flex flex-col gap-5 sm:gap-10 items-center sm:items-start order-1 sm:order-1 lg:mt-[-200px]"
+    >
+        <img src="person.svg" alt="" class="w-32 h-32 sm:w-auto sm:h-auto" />
+        <button
+            class="bg-main text-main-50 rounded-[10px] text-[20px] px-5 py-1 lg:px-12 lg:py-2 lg:rounded-[15px]"
+        >
+            Change Photo
+        </button>
+    </div>
+
+    <div class="order-2 sm:order-2">
+        <div
+            class="bg-main-50 p-6 rounded-lg shadow-lg w-90 sm:w-90 md:w-90 lg:w-full border border-[#DFDFDF]"
+        >
+            <h2
+                class="text-[24px] sm:text-[32px] font-semibold mb-4 text-main text-center sm:text-left"
+            >
+                Personal Information
+            </h2>
+            <div class="flex flex-col gap-5">
+                <div class="flex flex-col sm:flex-row gap-4 sm:gap-6">
+                    <div class="flex flex-col w-full">
+                        <label class="text-[#9E9E9E] text-[18px]">First Name</label>
+                        <input
+                            type="text"
+                            value="Mariem"
+                            class="text-main text-[16px] border border-[#DFDFDF] rounded-lg p-2 focus:outline-none focus:ring-1 focus:ring-main w-full sm:w-55"
+                        />
+                    </div>
+                    <div class="flex flex-col w-full">
+                        <label class="text-[#9E9E9E] text-[18px]">Last Name</label>
+                        <input
+                            type="text"
+                            value="Taha"
+                            class="text-main text-[16px] border border-[#DFDFDF] rounded-lg p-2 focus:outline-none focus:ring-1 focus:ring-main w-full sm:w-55"
+                        />
+                    </div>
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-[#9E9E9E] text-[18px]">Email</label>
+                    <input
+                        type="email"
+                        value="mariamTaha24@gmail.com"
+                        class="text-main text-[16px] border border-[#DFDFDF] rounded-lg p-2 focus:outline-none focus:ring-1 focus:ring-main"
+                    />
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-[#9E9E9E] text-[18px]">Phone Number</label>
+                    <input
+                        type="tel"
+                        value=""
+                        class="text-main text-[16px] border border-[#D1D1D1] rounded-lg p-2 focus:outline-none focus:ring-1 focus:ring-main placeholder-[#ADADAD]"
+                        placeholder="Enter your phone number"
+                    />
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-[#9E9E9E] text-[18px]">Country</label>
+                    <input
+                        type="text"
+                        value=""
+                        class="text-main text-[16px] border border-[#D1D1D1] rounded-lg p-2 focus:outline-none focus:ring-1 focus:ring-main placeholder-[#ADADAD]"
+                        placeholder="Enter your country"
+                    />
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-[#9E9E9E] text-[18px]">City</label>
+                    <input
+                        type="text"
+                        value=""
+                        class="text-main text-[16px] border border-[#D1D1D1] rounded-lg p-2 focus:outline-none focus:ring-1 focus:ring-main placeholder-[#ADADAD]"
+                        placeholder="Enter your city"
+                    />
+                </div>
+
+                <div class="flex flex-col">
+                    <label class="text-[#9E9E9E] text-[18px]">Bio</label>
+                    <input
+                        type="text"
+                        value=""
+                        class="text-main text-[16px] border border-[#D1D1D1] rounded-lg p-2 focus:outline-none focus:ring-1 focus:ring-main placeholder-[#ADADAD]"
+                        placeholder="Enter your Bio"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-center items-center items-center gap-3 mt-5">
+            <button
+                class="border border-main text-main bg-main-50 rounded-[15px] text-[18px] sm:text-[20px] px-8 py-1 lg:px-12 lg:py-2"
+            >
+                Save
+            </button>
+            <button
+                class="border border-main-50 text-main-50 rounded-[15px] text-[18px] sm:text-[20px] px-8 py-1 lg:px-12 lg:py-2"
+            >
+                Cancel
+            </button>
+        </div>
+    </div>
+</div>
